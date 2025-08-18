@@ -1,0 +1,10 @@
+[tools]
+"aqua:mfontanini/presenterm" = "latest"
+
+[tasks.presentation]
+description = "Present the slides"
+run = "presenterm slides.md"
+
+[tasks.pdf]
+description = "Export presentation PDF"
+run = "presenterm --export-pdf slides.md"
