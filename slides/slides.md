@@ -6,14 +6,26 @@ authors:
  - Connor Adams
 ---
 
-Slide 1
+Who are we
 ---
 
-Hello.
-
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+<!-- alignment: center -->
+Connor Adams
+![](images/connorads.jpg)
+Staff Engineer @ TRIVER LTD
+![](images/github-mark-white.png) [connorads](https://github.com/connorads)
+<!-- column: 1 -->
+Mark Ridge
+![](images/mark-profile.jpeg)
 <!-- end_slide -->
 
-Slide 2
+Poll time
 ---
-
-Here is some content.
+<!-- jump_to_middle -->
+<!-- alignment: center -->
+What do you host SvelteKit on?
+<!-- end_slide -->
+Hi
+===
