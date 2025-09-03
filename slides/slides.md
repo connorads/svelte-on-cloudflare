@@ -13,11 +13,11 @@ Who are we
 <!-- column: 0 -->
 <!-- alignment: center -->
 Connor Adams
-![](images/connorads.jpg)
+![image:width:100%](images/connorads.jpg)
 Staff Engineer @ TRIVER LTD
 <!-- column: 1 -->
 Mark Ridge
-![](images/mark-profile.jpeg) #TODO: Make images same size
+![image:width:100%](images/mark-profile.jpeg)
 Software Engineer @ TRIVER LTD
 <!-- end_slide -->
 
