@@ -27,8 +27,27 @@ Poll time
 <!-- alignment: center -->
 What do you host SvelteKit on? (1 minute)
 <!-- end_slide -->
-Options (Vercel etc - just images)
+Options (Vercel etc - just images) #TODO: Set for tv on day
 ---
+<!-- alignment: center -->
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+Vercel  
+![image:width:40%](images/vercel-logo.png)
+<!-- column: 1 -->
+Netlify  
+![image:width:40%](images/netlify-logo-square.png)
+<!-- alignment: center -->
+<!-- new_lines: 4 -->
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+Amplify  
+![image:width:40%](images/aws-amplify.png)
+<!-- column: 1 -->
+<!-- pause -->
+Cloudflare  
+![image:width:40%](images/cloudflare-logo.png)
 <!-- end_slide -->
 Options (Vercel etc - pro cons -> cloudflare on last column)
 ---
