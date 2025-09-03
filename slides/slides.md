@@ -15,10 +15,10 @@ Who are we
 Connor Adams
 ![](images/connorads.jpg)
 Staff Engineer @ TRIVER LTD
-![](images/github-mark-white.png) [connorads](https://github.com/connorads)
 <!-- column: 1 -->
 Mark Ridge
 ![](images/mark-profile.jpeg)
+Software Engineer @ TRIVER LTD
 <!-- end_slide -->
 
 Poll time
