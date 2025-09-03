@@ -17,7 +17,7 @@ Connor Adams
 Staff Engineer @ TRIVER LTD
 <!-- column: 1 -->
 Mark Ridge
-![](images/mark-profile.jpeg)
+![](images/mark-profile.jpeg) #TODO: Make images same size
 Software Engineer @ TRIVER LTD
 <!-- end_slide -->
 
