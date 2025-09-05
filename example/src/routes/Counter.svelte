@@ -1,17 +1,55 @@
 <script lang="ts">
 	import { Spring } from 'svelte/motion';
 
-	const count = new Spring(0);
+	interface Props {
+		initialCount: number;
+	}
+
+	let { initialCount = 0 }: Props = $props();
+
+	const count = new Spring(initialCount);
 	const offset = $derived(modulo(count.current, 1));
+	let isLoading = $state(false);
 
 	function modulo(n: number, m: number) {
 		// handle negative numbers
 		return ((n % m) + m) % m;
 	}
+
+	async function updateCounter(action: 'increment' | 'decrement') {
+		if (isLoading) return;
+		
+		isLoading = true;
+		
+		try {
+			const response = await fetch('/api/counter', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ action }),
+			});
+			
+			if (!response.ok) {
+				throw new Error('Failed to update counter');
+			}
+
+			const data: {count: number} = await response.json();
+			count.target = data.count;
+		} catch (error) {
+			console.error('Error updating counter:', error);
+		} finally {
+			isLoading = false;
+		}
+	}
 </script>
 
 <div class="counter">
-	<button onclick={() => (count.target -= 1)} aria-label="Decrease the counter by one">
+	<button 
+		onclick={() => updateCounter('decrement')} 
+		aria-label="Decrease the counter by one"
+		disabled={isLoading}
+	>
 		<svg aria-hidden="true" viewBox="0 0 1 1">
 			<path d="M0,0.5 L1,0.5" />
 		</svg>
@@ -24,7 +62,11 @@
 		</div>
 	</div>
 
-	<button onclick={() => (count.target += 1)} aria-label="Increase the counter by one">
+	<button 
+		onclick={() => updateCounter('increment')} 
+		aria-label="Increase the counter by one"
+		disabled={isLoading}
+	>
 		<svg aria-hidden="true" viewBox="0 0 1 1">
 			<path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" />
 		</svg>
@@ -53,6 +95,11 @@
 
 	.counter button:hover {
 		background-color: var(--color-bg-1);
+	}
+
+	.counter button:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
 	}
 
 	svg {
