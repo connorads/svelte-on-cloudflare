@@ -2,6 +2,9 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <svelte:head>
@@ -25,7 +28,11 @@
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
 
-	<Counter />
+	<Counter initialCount={data.initialCount} />
+	
+	{#if data.error}
+		<p class="error">Error: {data.error}</p>
+	{/if}
 </section>
 
 <style>
@@ -55,5 +62,11 @@
 		height: 100%;
 		top: 0;
 		display: block;
+	}
+
+	.error {
+		color: red;
+		margin-top: 1rem;
+		font-weight: 500;
 	}
 </style>
