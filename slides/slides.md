@@ -20,18 +20,16 @@ Mark Ridge
 ![image:width:100%](images/mark-profile.jpeg)
 Software Engineer @ TRIVER LTD
 <!-- end_slide -->
-
 Poll time
 ---
 <!-- jump_to_middle -->
 <!-- alignment: center -->
 What do you host SvelteKit on? (1 minute)
 <!-- end_slide -->
-Options (Vercel etc - just images) #TODO: Set for tv on day
+Sveltekit Hosting - Options #TODO: Set for tv on day
 ---
 <!-- alignment: center -->
 <!-- column_layout: [1, 1] -->
-
 <!-- column: 0 -->
 Vercel  
 ![image:width:40%](images/vercel-logo.png)
@@ -48,9 +46,6 @@ Amplify
 <!-- pause -->
 Cloudflare  
 ![image:width:40%](images/cloudflare-logo.png)
-<!-- end_slide -->
-Options (Vercel etc - pro cons -> cloudflare on last column)
----
 <!-- end_slide -->
 Context - why are we using Cloudflare (1 minute)
 ---
@@ -78,8 +73,23 @@ Drawbacks - Pages vs Workers (1 minute)
 Drawbacks - some wierdness with envs
 ---
 <!-- end_slide -->
-Conclusion - give it a go (1 minute)
+Conclusion - give it a go
 ---
+<!-- pause -->
+<!-- incremental_lists: true -->
+💡 What Cloudflare offers 
+&nbsp;  
+
+<!-- pause -->
+💡 How you get started 
+&nbsp;  
+
+<!-- pause -->
+💡 Some of the drawbacks
+
+<!-- pause -->
+> [!warning]
+> This is not necessarily the best
 <!-- end_slide -->
 Questions?
 ---
