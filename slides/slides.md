@@ -24,28 +24,40 @@ Poll time
 ---
 <!-- jump_to_middle -->
 <!-- alignment: center -->
-What do you host SvelteKit on? (1 minute)
+What do you host SvelteKit on?
 <!-- end_slide -->
-Sveltekit Hosting - Options #TODO: Set for tv on day
+Sveltekit Hosting - there are many options!
+---
+<!-- end_slide -->
+Sveltekit Hosting - there are many options!
 ---
 <!-- alignment: center -->
-<!-- column_layout: [1, 1] -->
-<!-- column: 0 -->
-Vercel  
-![image:width:40%](images/vercel-logo.png)
-<!-- column: 1 -->
-Netlify  
-![image:width:40%](images/netlify-logo-square.png)
+![image:width:100%](images/mash-1.png)
+<!-- end_slide -->
+Sveltekit Hosting - there are many options!
+---
 <!-- alignment: center -->
-<!-- new_lines: 4 -->
-<!-- column_layout: [1, 1] -->
-<!-- column: 0 -->
-Amplify  
-![image:width:40%](images/aws-amplify.png)
-<!-- column: 1 -->
-<!-- pause -->
-Cloudflare  
-![image:width:40%](images/cloudflare-logo.png)
+![image:width:100%](images/mash-2.png)
+<!-- end_slide -->
+Sveltekit Hosting - there are many options!
+---
+<!-- alignment: center -->
+![image:width:100%](images/mash-3.png)
+<!-- end_slide -->
+Sveltekit Hosting - there are many options!
+---
+<!-- alignment: center -->
+![image:width:100%](images/mash-4.png)
+<!-- end_slide -->
+Sveltekit Hosting - there are many options!
+---
+<!-- alignment: center -->
+![image:width:100%](images/cloudflare-logo.png)
+<!-- end_slide -->
+Sveltekit Hosting - there are many options!
+---
+<!-- alignment: center -->
+![image:width:100%](images/cloudflare-why.png)
 <!-- end_slide -->
 Context - why are we using Cloudflare (1 minute)
 ---
