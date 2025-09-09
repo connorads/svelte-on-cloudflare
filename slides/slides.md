@@ -59,55 +59,87 @@ Sveltekit Hosting - there are many options!
 <!-- alignment: center -->
 ![image:width:100%](images/cloudflare-why.png)
 <!-- end_slide -->
-Context - why are we using Cloudflare (1 minute)
----
- - We needed to add frontend to our stack
- - Been using svelte internally
- - We use cloudflare (maybe show screenshot of integrations-frontend)
-<!-- end_slide -->
-What is cloudflare like as dev ex (demo with cli)
----
-
-Covering:
- - Boot with cli (2 minutes)
- - Intro to svelte adapter (1 minute)
-
- TODO APP?
- - Go through wrangler (1 minute)
- - Show previews (2 minutes)
- - Observability (see logs, log push etc) (1 minute)
- - Kv prototyping maybe
- - Bonus with d1 or durable objects
-<!-- end_slide -->
-Drawbacks - Pages vs Workers (1 minute)
+<!-- jump_to_middle -->
+1 year ago...
 ---
 <!-- end_slide -->
-Drawbacks - some wierdness with envs
+![image:width:100%](images/triver-demo.gif)
+<!-- end_slide -->
+![image:width:40%](images/cloudflare-logo.png)
+<!-- alignment: center -->
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+✅ Official adapter
+<!-- pause -->
+<!-- new_line -->
+✅ Already using Cloudflare
+<!-- pause -->
+<!-- column: 1 -->
+✅ Very cheap
+<!-- pause -->
+<!-- new_line -->
+✅ New and interesting
+<!-- end_slide -->
+<!-- jump_to_middle -->
+Demo time!
 ---
+<!-- end_slide -->
+<!-- jump_to_middle -->
+Life in the Cloud - what has flared up?
+---
+<!-- end_slide -->
+Pages vs Workers
+---
+<!-- alignment: center -->
+<!-- column_layout: [10, 1, 10] -->
+<!-- column: 0 -->
+Pages
+***
+❌ For static sites
+<!-- new_line -->
+❌ No observability 
+<!-- new_line -->
+❌ Limited flexibility
+<!-- column: 2 -->
+Workers
+***
+✅ Serverless compute
+<!-- new_line -->
+✅ Logs with logpush
+<!-- new_line -->
+✅ Easy to add KV, D1, Durable Objects
+<!-- pause -->
+<!-- reset_layout -->
+<!-- alignment: center -->
+<!-- new_lines: 1 -->
+> [!warning]
+> Cloudflare now advise starting with workers. There is also a migration guide (and an llm prompt)!
+<!-- end_slide -->
+Env strangeness
+---
+![image:width:100%](images/env-strangeness.png)
 <!-- end_slide -->
 Conclusion - give it a go
 ---
 <!-- pause -->
 <!-- incremental_lists: true -->
 💡 What Cloudflare offers 
-&nbsp;  
+<!-- new_line -->
 
 <!-- pause -->
 💡 How you get started 
-&nbsp;  
+<!-- new_line -->
 
 <!-- pause -->
 💡 Some of the drawbacks
 
 <!-- pause -->
 <!-- jump_to_middle -->
-<!-- new_lines: 10 -->
+<!-- new_lines: 5 -->
 > [!warning]
-> This is not necessarily the best
+> This is not necessarily the best framework. 
+> Give it a go!
 <!-- end_slide -->
+<!-- jump_to_middle -->
 Questions?
----
-Prep:
- - Pricing
- - Why
 ---
