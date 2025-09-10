@@ -5,6 +5,14 @@ authors:
  - Mark Ridge
  - Connor Adams
 ---
+Agenda 
+---
+<!-- incremental_lists: true -->
+<!-- list_item_newlines: 3 -->
+- Intro to hosting with Cloudflare
+- Demo
+- Living with Cloudflare - some drawbacks
+<!-- end_slide -->
 
 Who are we
 ---
