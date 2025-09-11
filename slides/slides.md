@@ -77,16 +77,11 @@ Sveltekit Hosting - there are many options!
 <!-- alignment: center -->
 <!-- column_layout: [1, 1] -->
 <!-- column: 0 -->
+<!-- pause -->
 ✅ Official adapter
 <!-- pause -->
-<!-- new_line -->
-✅ Already using Cloudflare
-<!-- pause -->
 <!-- column: 1 -->
-✅ Very cheap
-<!-- pause -->
-<!-- new_line -->
-✅ New and interesting
+✅ Already using Cloudflare
 <!-- end_slide -->
 <!-- jump_to_middle -->
 Demo time!
