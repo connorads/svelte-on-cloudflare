@@ -68,7 +68,7 @@ Sveltekit Hosting - there are many options!
 ![image:width:100%](images/cloudflare-why.png)
 <!-- end_slide -->
 <!-- jump_to_middle -->
-1 year ago...
+2 years ago...
 ---
 <!-- end_slide -->
 ![image:width:100%](images/triver-demo.gif)
