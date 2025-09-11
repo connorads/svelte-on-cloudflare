@@ -1,0 +1,6 @@
+[tools]
+node = "lts"
+
+[tasks.patch]
+description = "Apply patch from git commit into different directory"
+run = "DIR=svelte-london && git show 7ad0d710ada855ac54ab392bb79a2aed781ca911 --no-prefix | sed 's|example/||g' | (cd $DIR && patch -p0) && rm $DIR/src/routes/+page.ts"
