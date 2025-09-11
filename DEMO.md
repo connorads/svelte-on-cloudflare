@@ -19,6 +19,11 @@ Some notes to help run the live demo.
 
 ## Add KV
 
+We're demoing the Cloudflare integrations here not crafting a well built app
+
+- KV is eventually consistent for heavy reads so this isn't a good use case
+- No live updates on the frontend
+
 1. `cd svelte-london`
 2. `npx wrangler kv namespace create COUNTER_KV` (could also create it in dashboard)
 3. Accept adding it to `wrangler.jsonc`
@@ -30,7 +35,7 @@ Some notes to help run the live demo.
 ## Use KV
 
 1. Add KV using example code
-    - `mise run patch`
+    - `mise run patch` (don't worry about `mise` this just runs a script to patch with `git`)
 2. Run locally
 3. Deploy
 4. Look at project in [Cloudflare dash](https://dash.cloudflare.com/)
