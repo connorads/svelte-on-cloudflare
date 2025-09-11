@@ -106,7 +106,7 @@ Pages
 <!-- column: 2 -->
 Workers
 ***
-✅ Serverless platform, now host apps
+✅ Serverless platform, can now host apps
 <!-- new_line -->
 ✅ Logs with logpush
 <!-- new_line -->
