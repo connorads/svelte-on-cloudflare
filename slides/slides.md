@@ -133,7 +133,11 @@ Preview deployments
 <!-- end_slide -->
 Env strangeness
 ---
-![image:width:100%](images/env-strangeness.png)
+![image:width:100%](images/active-deployment.png)
+<!-- end_slide -->
+Env strangeness
+---
+![image:width:100%](images/env-vars.png)
 <!-- end_slide -->
 Conclusion - give it a go
 ---
