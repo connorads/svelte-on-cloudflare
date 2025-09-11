@@ -143,9 +143,9 @@ Conclusion - give it a go
 
 <!-- pause -->
 <!-- jump_to_middle -->
-<!-- new_lines: 5 -->
+<!-- new_lines: 3 -->
 > [!warning]
-> This is not necessarily the best framework. 
+> This is not necessarily the best place to host SvelteKit. 
 > Give it a go!
 <!-- end_slide -->
 <!-- jump_to_middle -->
