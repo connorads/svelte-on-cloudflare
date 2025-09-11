@@ -105,7 +105,7 @@ Pages
 ***
 ❌ For static sites
 <!-- new_line -->
-❌ No observability 
+❌ Only real-time logs
 <!-- new_line -->
 ❌ Limited flexibility
 <!-- column: 2 -->
@@ -122,6 +122,14 @@ Workers
 <!-- new_lines: 1 -->
 > [!warning]
 > Cloudflare now advise starting with workers. There is also a migration guide (and an llm prompt)!
+<!-- end_slide -->
+Preview deployments
+---
+![image:width:80%](images/previews.png)
+<!-- end_slide -->
+Preview deployments
+---
+![image:width:80%](images/testing-1,2,3,4.jpg)
 <!-- end_slide -->
 Env strangeness
 ---
