@@ -103,7 +103,7 @@ Pages vs Workers
 <!-- column: 0 -->
 Pages
 ***
-❌ For static sites
+❌ Early all in one offering
 <!-- new_line -->
 ❌ Only real-time logs
 <!-- new_line -->
@@ -111,11 +111,11 @@ Pages
 <!-- column: 2 -->
 Workers
 ***
-✅ Serverless compute
+✅ Serverless platform, now host apps
 <!-- new_line -->
 ✅ Logs with logpush
 <!-- new_line -->
-✅ Easy to add KV, D1, Durable Objects
+✅ Durable Objects, Cron triggers
 <!-- pause -->
 <!-- reset_layout -->
 <!-- alignment: center -->
