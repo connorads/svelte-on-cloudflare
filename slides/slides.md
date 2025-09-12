@@ -11,7 +11,7 @@ Agenda
 <!-- list_item_newlines: 3 -->
 - Intro to hosting with Cloudflare
 - Demo
-- Living with Cloudflare - some drawbacks
+- Living with Cloudflare - good and bad
 <!-- end_slide -->
 
 Who are we
