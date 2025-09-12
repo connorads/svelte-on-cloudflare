@@ -93,30 +93,17 @@ Life in the Cloud - what has flared up?
 <!-- end_slide -->
 Pages vs Workers
 ---
-<!-- alignment: center -->
-<!-- column_layout: [10, 1, 10] -->
-<!-- column: 0 -->
-Pages
-***
-❌ Early all in one offering
-<!-- new_line -->
-❌ Only real-time logs
-<!-- new_line -->
-❌ Limited flexibility
-<!-- column: 2 -->
-Workers
-***
-✅ Serverless platform, can now host apps
-<!-- new_line -->
-✅ Logs with logpush
-<!-- new_line -->
-✅ Durable Objects, Cron triggers
-<!-- pause -->
-<!-- reset_layout -->
-<!-- alignment: center -->
-<!-- new_lines: 1 -->
 > [!warning]
-> Cloudflare now advise starting with workers. There is also a migration guide (and an llm prompt)!
+> TLDR: Two different ways of hosting Sveltekit on Cloudflare -> use Workers
+<!-- incremental_lists: true -->
+<!-- list_item_newlines: 2 -->
+
+Why? Workers
+- have full observability
+- has a vite plugin for better local development
+- make it easier to add Durable Objects
+- have Cron triggers
+- recommended by Cloudflare over Pages
 <!-- end_slide -->
 Preview deployments
 ---
