@@ -37,7 +37,7 @@ Let's use KV to persist the state of the counter anyway.
 ## Use KV
 
 1. Add KV using example code
-    - `mise run patch` (don't worry about `mise` this just runs a script to patch with `git`)
+    - `mise run patch` (don't worry about `mise` this just copies code from examples - see my [lightning talk](https://github.com/connorads/mise/tree/master/demo))
 2. Run locally
 3. Deploy
 4. Look at project in [Cloudflare dash](https://dash.cloudflare.com/)
