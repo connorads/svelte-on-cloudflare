@@ -120,6 +120,8 @@ Can only see environment variables for latest build
 Can only see environment variables for latest build
 ---
 ![image:width:100%](images/env-vars.png)
+> [!note]
+> If you don't have this problem, let us know
 <!-- end_slide -->
 Conclusion - give it a go
 ---
