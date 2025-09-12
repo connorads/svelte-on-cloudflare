@@ -87,6 +87,10 @@ Sveltekit Hosting - there are many options!
 Demo time!
 ---
 <!-- end_slide -->
+Counter app demo
+---
+![image:width:100%](images/qr-deployment.png)
+<!-- end_slide -->
 <!-- jump_to_middle -->
 Life in the Cloud - what has flared up?
 ---
