@@ -93,7 +93,7 @@ Life in the Cloud - what has flared up?
 <!-- end_slide -->
 Pages vs Workers
 ---
-> [!warning]
+> [!note]
 > TLDR: Two different ways of hosting Sveltekit on Cloudflare -> use Workers
 <!-- incremental_lists: true -->
 <!-- list_item_newlines: 2 -->
@@ -113,11 +113,11 @@ Preview deployments
 ---
 ![image:width:80%](images/testing-1,2,3,4.jpg)
 <!-- end_slide -->
-Env strangeness
+Can only see environment variables for latest build
 ---
 ![image:width:100%](images/active-deployment.png)
 <!-- end_slide -->
-Env strangeness
+Can only see environment variables for latest build
 ---
 ![image:width:100%](images/env-vars.png)
 <!-- end_slide -->
