@@ -152,6 +152,15 @@ Conclusion - give it a go
 > This is not necessarily the best place to host SvelteKit. 
 > Give it a go!
 <!-- end_slide -->
-<!-- jump_to_middle -->
 Questions?
 ---
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+<!-- jump_to_middle -->
+Demo code repo
+---
+
+<!-- column: 1 -->
+
+
+![image:width:100%](images/qr-repo.png)
