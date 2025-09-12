@@ -104,6 +104,10 @@ Why? Workers
 - make it easier to add Durable Objects
 - have Cron triggers
 - recommended by Cloudflare over Pages
+<!-- pause -->
+> [!important]
+> Why care?  
+> Cloudflare is still evolving
 <!-- end_slide -->
 Preview deployments
 ---
