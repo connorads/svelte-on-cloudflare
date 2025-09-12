@@ -2,5 +2,13 @@
 node = "lts"
 
 [tasks.patch]
-description = "Apply patch from git commit into different directory"
-run = "DIR=svelte-london && git show 7ad0d710ada855ac54ab392bb79a2aed781ca911 --no-prefix | sed 's|example/||g' | (cd $DIR && patch -p0) && rm $DIR/src/routes/+page.ts"
+description = "Copy counter implementation from example to target directory"
+run = """
+DIR=svelte-london
+cp example/src/routes/+page.server.ts $DIR/src/routes/
+cp example/src/routes/+page.svelte $DIR/src/routes/
+cp example/src/routes/Counter.svelte $DIR/src/routes/
+mkdir -p $DIR/src/routes/api/counter
+cp example/src/routes/api/counter/+server.ts $DIR/src/routes/api/counter/
+rm -f $DIR/src/routes/+page.ts
+"""
