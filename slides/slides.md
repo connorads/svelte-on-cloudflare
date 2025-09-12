@@ -81,7 +81,7 @@ Sveltekit Hosting - there are many options!
 ✅ Official adapter
 <!-- pause -->
 <!-- column: 1 -->
-✅ Already using Cloudflare
+✅ Already using Cloudflare for DNS, Bot protection
 <!-- end_slide -->
 <!-- jump_to_middle -->
 Demo time!
