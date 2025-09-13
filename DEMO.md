@@ -17,6 +17,7 @@ Some notes to help run the live demo.
 4. Take a look at files
     - `wrangler.jsonc`
     - `svelte.config.js`
+5. Look on [Cloudflare dash](https://dash.cloudflare.com/) to show KV etc. 
 
 ## Add KV
 
