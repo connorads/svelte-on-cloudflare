@@ -7,6 +7,7 @@ Some notes to help run the live demo.
 1. Make sure you're logged into correct account first in browser on [Cloudflare dash](https://dash.cloudflare.com/)
 2. Delete the KV and or project
 3. `npx wrangler logout`
+4. Open example app https://example.sveltelondon.workers.dev/
 
 ## Deploy
 
