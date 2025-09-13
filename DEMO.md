@@ -21,10 +21,10 @@ Some notes to help run the live demo.
 
 ## Add KV
 
-We're demoing the Cloudflare integrations here not crafting a well built app
-
-- KV is eventually consistent for heavy reads so this isn't a good use case
+We're demoing the Cloudflare integrations here - not crafting a well-built app.
+- KV is eventually consistent and for heavy reads so this isn't a good use case
 - No live updates on the frontend
+Let's use KV to persist the state of the counter anyway.
 
 1. `cd svelte-london`
 2. `npx wrangler kv namespace create COUNTER_KV` (could also create it in dashboard)
