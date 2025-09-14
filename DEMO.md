@@ -21,10 +21,14 @@ Some notes to help run the live demo.
 
 ## Add KV
 
+Persisting state on a counter is a good fit for [durable objects](https://developers.cloudflare.com/durable-objects/).
+Somewhat ironically it is a bit of a faff to setup so instead we'll use KV for simplicity. D1 is fairly easy to setup.
 We're demoing the Cloudflare integrations here - not crafting a well-built app.
+
 - KV is eventually consistent and for heavy reads so this isn't a good use case
 - No live updates on the frontend
 Let's use KV to persist the state of the counter anyway.
+Also I setup API endpoints, you might want to use use forms to have better progressive enhancement etc.
 
 1. `cd svelte-london`
 2. `npx wrangler kv namespace create COUNTER_KV` (could also create it in dashboard)
