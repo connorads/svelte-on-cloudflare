@@ -4,10 +4,9 @@ Script for a live walk-through of deploying SvelteKit on Cloudflare, then persis
 
 ## Demo flow
 
-1. Prep the Cloudflare account and browser session
-2. Scaffold and deploy the starter project
-3. Add a KV namespace and wire up types
-4. Patch the route to read/write from KV and redeploy
+1. Scaffold and deploy a starter SvelteKit project
+2. Add Cloudflare KV
+3. Add some code that uses this KV
 
 ## Pre-demo checklist
 
