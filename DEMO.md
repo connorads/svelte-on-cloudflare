@@ -17,7 +17,7 @@ Script for a live walk-through of deploying SvelteKit on Cloudflare, then persis
 
 ## 1. Scaffold + first deploy
 
-1. `npm create cloudflare@2.51.4` (use `@latest` on the day)
+1. `npm create cloudflare@2.51.4` (use `@latest` if you're doing this yourself not for a demo)
 2. Choose `svelte-london` as the project folder
 3. Accept the initial deploy during the wizard to get a live baseline
 4. Show the generated files:
