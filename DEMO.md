@@ -2,18 +2,18 @@
 
 Script for a live walk-through of deploying SvelteKit on Cloudflare, then persisting a counter with KV.
 
-## Demo flow
-
-1. Scaffold and deploy a starter SvelteKit project
-2. Add Cloudflare KV
-3. Add some code that uses this KV
-
 ## Pre-demo checklist
 
 - Sign in to the correct account on the [Cloudflare dashboard](https://dash.cloudflare.com/)
 - Remove any existing demo KV namespaces or projects so names are free
 - Run `npx wrangler logout` to show the authentication flow
 - Open the deployed reference app <https://example.sveltelondon.workers.dev/> as a preview of the result
+
+## Demo flow
+
+1. Scaffold and deploy a starter SvelteKit project
+2. Add Cloudflare KV
+3. Add some code that uses this KV
 
 ## 1. Scaffold + first deploy
 
