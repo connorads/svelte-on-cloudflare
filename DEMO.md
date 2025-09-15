@@ -7,6 +7,7 @@ Script for a live walk-through of deploying SvelteKit on Cloudflare, then persis
 - Sign in to the correct account on the [Cloudflare dashboard](https://dash.cloudflare.com/)
 - Remove any existing demo KV namespaces or projects so names are free
 - Run `npx wrangler logout` to show the authentication flow
+- Open the repo <https://github.com/connorads/svelte-on-cloudflare>
 - Open the deployed reference app <https://example.sveltelondon.workers.dev/> as a preview of the result
 
 ## Demo flow
