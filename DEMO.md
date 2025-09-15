@@ -1,48 +1,64 @@
 # Demo
 
-Some notes to help run the live demo.
+Script for a live walk-through of deploying SvelteKit on Cloudflare, then persisting a counter with KV.
 
-## Prep
+## Demo flow
 
-1. Make sure you're logged into correct account first in browser on [Cloudflare dash](https://dash.cloudflare.com/)
-2. Delete the KV and or project
-3. `npx wrangler logout`
-4. Open example app https://example.sveltelondon.workers.dev/
+1. Prep the Cloudflare account and browser session
+2. Scaffold and deploy the starter project
+3. Add a KV namespace and wire up types
+4. Patch the route to read/write from KV and redeploy
 
-## Deploy
+## Pre-demo checklist
 
-1. `npm create cloudflare@2.51.4` (`npm create cloudflare@latest` in practice)
-2. Folder should be `svelte-london`
-3. Deploy yes
-4. Take a look at files
-    - `wrangler.jsonc`
-    - `svelte.config.js`
-5. Look on [Cloudflare dash](https://dash.cloudflare.com/) to show KV etc. 
+- Sign in to the correct account on the [Cloudflare dashboard](https://dash.cloudflare.com/)
+- Remove any existing demo KV namespaces or projects so names are free
+- Run `npx wrangler logout` to show the authentication flow
+- Open the deployed reference app <https://example.sveltelondon.workers.dev/> as a preview of the result
 
-## Add KV
+## 1. Scaffold + first deploy
 
-Persisting state on a counter is a good fit for [durable objects](https://developers.cloudflare.com/durable-objects/).
-Somewhat ironically it is a bit of a faff to setup so instead we'll use KV for simplicity. D1 is fairly easy to setup.
-We're demoing the Cloudflare integrations here - not crafting a well-built app.
+1. `npm create cloudflare@2.51.4` (use `@latest` on the day)
+2. Choose `svelte-london` as the project folder
+3. Accept the initial deploy during the wizard to get a live baseline
+4. Show the generated files:
+   - `wrangler.jsonc` for account/project bindings
+   - `svelte.config.js` to highlight the Cloudflare adapter configuration
+5. Visit the project in the [Cloudflare dashboard](https://dash.cloudflare.com/) to confirm the deployment
 
-- KV is eventually consistent and for heavy reads so this isn't a good use case
-- No live updates on the frontend
-Let's use KV to persist the state of the counter anyway.
-Also I setup API endpoints, you might want to use use forms to have better progressive enhancement etc.
+## 2. Add a KV namespace
+
+Persisting the counter in KV keeps the focus on Cloudflare integrations (Durable Objects would be a better fit, but heavier to explain live).
 
 1. `cd svelte-london`
-2. `npx wrangler kv namespace create COUNTER_KV` (could also create it in dashboard)
-3. Accept adding it to `wrangler.jsonc`
-4. Setup types
-   `npm run cf-typegen`
-   [Cloudflare Adapter Runtime APIs](https://svelte.dev/docs/kit/adapter-cloudflare#Runtime-APIs)
-5. Destructure `platform` from [sverdle/+page.server.ts](svelte-london/src/routes/sverdle/+page.server.ts)
+2. `npx wrangler kv namespace create COUNTER_KV` (or create from the dashboard)
+3. Accept Wrangler's prompt to add the binding to `wrangler.jsonc`
+4. Generate Cloudflare platform types so `platform.env` is strongly typed:
 
-## Use KV
+   ```bash
+   npm run cf-typegen
+   ```
 
-1. Add KV using example code
-    - `mise run patch` (don't worry about `mise` this just copies code from examples - see my [lightning talk](https://github.com/connorads/mise/tree/master/demo))
-2. Run locally
-3. Deploy
-4. Look at project in [Cloudflare dash](https://dash.cloudflare.com/)
-5. Look at bindings and logs
+5. Point out how `platform` is destructured in `src/routes/sverdle/+page.server.ts` and mirror that approach in the counter route
+
+## 3. Use KV in the SvelteKit route
+
+1. Apply the prepared patch that wires up the counter endpoint:
+
+   ```bash
+   mise run patch
+   ```
+
+   (This copies snippets from the `example` folder. See the [mise demo README](https://github.com/connorads/mise/tree/master/demo) for context on mise.)
+2. `npm run dev` and increment the counter to demonstrate the local behaviour
+3. `npm run deploy`
+4. In the dashboard, inspect:
+   - The `COUNTER_KV` binding on the Worker
+   - Request logs showing reads and writes
+
+## Wrap-up
+
+- Hopefully this demonstrates that it's possible to deploy a SvelteKit app to Cloudflare and use its developer platform
+- Remind the audience KV is eventually consistent and better suited for read-heavy workloads—this demo favours simplicity over architecture
+- Highlight that using `<form>` actions would offer progressive enhancement, but REST endpoints keep the live demo focused
+- Link to the example project for attendees who want to dig deeper after the session
