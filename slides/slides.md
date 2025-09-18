@@ -107,6 +107,10 @@ Why? Workers
 > Why care?  
 > Cloudflare is still evolving
 <!-- end_slide -->
+<!-- jump_to_middle -->
+> [!WARNING]  
+> Cloudflare with Sveltekit can feel like a lonely world.
+<!-- end_slide -->
 Preview deployments
 ---
 ![image:width:100%](images/previews.png)
