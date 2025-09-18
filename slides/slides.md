@@ -126,7 +126,7 @@ Can only see environment variables for latest build
 <!-- end_slide -->
 <!-- jump_to_middle -->
 > [!WARNING]  
-> Cloudflare with Sveltekit can feel like a lonely world.
+> Cloudflare with Sveltekit can feel like a lonely world...
 <!-- end_slide -->
 Conclusion - give it a go
 ---
