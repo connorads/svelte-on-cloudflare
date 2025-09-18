@@ -89,13 +89,20 @@ Counter app demo
 Life in the Cloud - what has flared up?
 ---
 <!-- end_slide -->
+Preview deployments
+---
+![image:width:100%](images/previews.png)
+<!-- end_slide -->
+Preview deployments
+---
+![image:width:100%](images/testing-1,2,3,4.jpg)
+<!-- end_slide -->
 Pages vs Workers
 ---
 > [!note]
 > TLDR: Two different ways of hosting Sveltekit on Cloudflare -> use Workers
 <!-- incremental_lists: true -->
 <!-- list_item_newlines: 2 -->
-
 Why Workers?
 - Full observability
 - Vite plugin for better local development
@@ -106,14 +113,6 @@ Why Workers?
 > [!important]
 > Why care?  
 > Cloudflare is still evolving
-<!-- end_slide -->
-Preview deployments
----
-![image:width:100%](images/previews.png)
-<!-- end_slide -->
-Preview deployments
----
-![image:width:100%](images/testing-1,2,3,4.jpg)
 <!-- end_slide -->
 Can only see environment variables for latest build
 ---
