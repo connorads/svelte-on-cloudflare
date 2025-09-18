@@ -9,7 +9,7 @@ Agenda
 ---
 <!-- incremental_lists: true -->
 <!-- list_item_newlines: 3 -->
-- Intro to hosting with Cloudflare
+- Why Cloudflare?
 - Demo
 - Living with Cloudflare - good and bad
 <!-- end_slide -->
@@ -109,11 +109,11 @@ Why? Workers
 <!-- end_slide -->
 Preview deployments
 ---
-![image:width:80%](images/previews.png)
+![image:width:100%](images/previews.png)
 <!-- end_slide -->
 Preview deployments
 ---
-![image:width:80%](images/testing-1,2,3,4.jpg)
+![image:width:100%](images/testing-1,2,3,4.jpg)
 <!-- end_slide -->
 Can only see environment variables for latest build
 ---
