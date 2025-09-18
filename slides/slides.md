@@ -107,10 +107,6 @@ Why? Workers
 > Why care?  
 > Cloudflare is still evolving
 <!-- end_slide -->
-<!-- jump_to_middle -->
-> [!WARNING]  
-> Cloudflare with Sveltekit can feel like a lonely world.
-<!-- end_slide -->
 Preview deployments
 ---
 ![image:width:100%](images/previews.png)
@@ -128,6 +124,10 @@ Can only see environment variables for latest build
 ![image:width:100%](images/env-vars.png)
 > [!note]
 > If you don't have this problem, let us know
+<!-- end_slide -->
+<!-- jump_to_middle -->
+> [!WARNING]  
+> Cloudflare with Sveltekit can feel like a lonely world.
 <!-- end_slide -->
 Conclusion - give it a go
 ---
