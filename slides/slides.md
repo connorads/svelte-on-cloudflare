@@ -96,12 +96,12 @@ Pages vs Workers
 <!-- incremental_lists: true -->
 <!-- list_item_newlines: 2 -->
 
-Why? Workers
-- have full observability
-- has a vite plugin for better local development
-- make it easier to add Durable Objects
-- have Cron triggers
-- recommended by Cloudflare over Pages
+Why Workers?
+- Full observability
+- Vite plugin for better local development
+- Easier Durable Objects
+- Cron triggers
+- Cloudflare recommends them over Pages
 <!-- pause -->
 > [!important]
 > Why care?  
